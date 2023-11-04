@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { useToast } from "@chakra-ui/react";
-import useAuth from "@/hooks/useAuth";
-import { addTodo } from "@/app/api/todo";
+import useAuth from "../hooks/useAuth";
+import { addTodo } from "../app/api/todo";
 const AddToDo = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");

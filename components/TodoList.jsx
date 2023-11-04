@@ -8,11 +8,11 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import useAuth from "@/hooks/useAuth";
+import useAuth from "../hooks/useAuth";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
-import {db} from '@/firebase/index'
+import {db} from '../firebase/index'
 import { FaToggleOff, FaToggleOn, FaTrash } from "react-icons/fa";
-import { deleteTodo,toggleTodoStatus } from "@/app/api/todo";
+import { deleteTodo,toggleTodoStatus } from "../app/api/todo";
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
 

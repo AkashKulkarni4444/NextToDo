@@ -1,8 +1,7 @@
-
-import TodoList from '@/components/TodoList';
 import { ChakraProvider } from "@chakra-ui/react";
-import Auth from '@/components/Auth';
-import AddTodo from '@/components/AddTodo';
+import TodoList from '../components/TodoList';
+import Auth from '../components/Auth';
+import AddTodo from '../components/AddToDo';
 export default function Home() {
   return (
     <div className='flex flex-col '>
